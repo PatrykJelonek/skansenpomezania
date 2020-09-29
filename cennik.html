@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#292f35">
+    <meta name="description" content="Cennik pokoi dostępnych dla gości Skansenu Pomezania we wsi Kałduny koło Iławy w województwie warmińsko-mazurskim nad Jeziorem Ławice. " />
+    <meta name="keywords" content="Agroturystyka, Skansen, Pomezania, Kałduny, Iława, Pokoje, Wynajem, Jezioro, Ławice, Warmińsko-Mazurskie, Dworek, Wysockich" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin-ext" rel="stylesheet">
+    <title>Cennik - Skansen Pomezania</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="image_src" href="img/logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">
+                <a class="nav__logo--link" href="#">
+                    <img src="img/ozdoba_lewa.png" class="nav__logo--img"  alt=""/>
+                    Agroturystyka „Skansen Pomezania”
+                    <img src="img/ozdoba_prawa.png" class="nav__logo--img"  alt=""/>
+                </a>
+            </h1>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--mobile" id="menu__list">
+                    <a class="nav__link nav__link--mobile" id="menu__list--link"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Strona Główna</a></li>
+                <li class="nav__item"><a class="nav__link" href="skansen.html">Skansen</a></li>
+                <li class="nav__item"><a class="nav__link" href="pokoje.html">Pokoje</a></li>
+                <li class="nav__item"><a class="nav__link" href="okolica.html">Okolica</a></li>
+                <li class="nav__item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="cennik.html">Cennik</a></li>
+                <li class="nav__item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="prices">
+        <header class="prices__header">
+            <h2 class="prices__title">Cennik</h2></header>
+        <ul class="prices__list">
+            <li class="prices__item">Pokój czteroosobowy – 400 zł za dobę*</li>
+            <li class="prices__item">Pokój dwuosobowy – 200 zł za dobę*</li>
+            <li class="prices__item">Cały dom – 1200 zł za dobę</li>
+            <li class="prices__item prices__item--space"></li>
+            <li class="prices__item">Doba rozpoczyna się o godz. 15.00 w dniu przyjazdu, a kończy o 11.00 w dniu wyjazdu.</li>
+            <li class="prices__item prices__item--space"></li>
+            <li class="prices__item">Preferujemy wynajem minimum na 3 doby.</li>
+            <li class="prices__item">Powyższe ceny nie dotyczą Świąt Bożego Narodzenia, Wielkanocy, Sylwestra  i majówki. </li>
+            <li class="prices__item">Cena do uzgodnienia w zależności od okresu i długości wynajmu.</li>
+            <li class="prices__item prices__item--space"></li>
+            <li class="prices__item">Potwierdzeniem rezerwacji jest wpłata zaliczki w wysokości 40% wartości pobytu na konto: <span class="prices__item--marker">28 1240 1604 1111 0000 1381 9729</span></li>
+            <li class="prices__item prices__item--space"></li>
+            <li class="prices__item">W związku z tym, iż bardzo cenimy prywatność naszych gości zrezygnowaliśmy z serwowania posiłków. Za to udostępniamy w pełni wyposażoną kuchnię.</li>
+        </ul>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu__list").click(function() {
+                $("#menu__list--link").toggleClass("mobile--on");
+                $('nav').toggleClass("nav--mobile");
+            });
+        });
+    </script>
+</body>
+
+</html>

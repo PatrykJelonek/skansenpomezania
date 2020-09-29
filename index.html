@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#292f35">
+    <meta name="description" content="Agroturystyka „Skansen Pomezania” z zachowaniem stylu skansenu, położona we wsi Kałduny koło Iławy w województwie warmińsko-mazurskim nad Jeziorem Ławice." />
+    <meta name="keywords" content="Agroturystyka, Skansen, Pomezania, Kałduny, Iława, Pokoje, Wynajem, Jezioro, Ławice, Warmińsko-Mazurskie, Dworek, Wysockich" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="img/favicon.png">
+    <title>Skansen Pomezania</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="image_src" href="img/logo.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">
+                <a class="nav__logo--link" href="#">
+                    <img src="img/ozdoba_lewa.png" class="nav__logo--img" alt="">
+                    Agroturystyka „Skansen Pomezania”
+                    <img src="img/ozdoba_prawa.png" class="nav__logo--img" alt="">
+                </a>
+            </h1>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--mobile" id="menu__list">
+                    <a class="nav__link nav__link--mobile" id="menu__list--link"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="index.html">Strona Główna</a></li>
+                <li class="nav__item"><a class="nav__link" href="skansen.html">Skansen</a></li>
+                <li class="nav__item"><a class="nav__link" href="pokoje.html">Pokoje</a></li>
+                <li class="nav__item"><a class="nav__link" href="okolica.html">Okolica</a></li>
+                <li class="nav__item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="cennik.html">Cennik</a></li>
+                <li class="nav__item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <section class="panorama">
+            <blockquote class="quotation">„Bieluchny dworek, śliczne pokoje. <br />O! Jakże ciepło w nich bez wątpienia. <br />Ale czy wiecie dziateczki moje <br />Ile to ludzi drży bez schronienia?..."</blockquote><cite class="quotation__author">- Władysław Bełza</cite></section>
+    </header>
+    <section class="sentence">
+        <header class="sentence__header">
+            <h2 class="sentence__title sentence__title--center">O skansenie</h2></header>
+        <p class="sentence__text">Agroturystyka „Skansen Pomezania” z zachowaniem stylu skansenu, położona we wsi Kałduny koło Iławy w województwie warmińsko-mazurskim nad Jeziorem Ławice.</p>
+        <p class="sentence__text">Jest to wyjątkowe miejsce dla ludzi, którzy cenią sobie wieś, naturę i spokój. Można tu pooddychać świeżym powietrzem, usłyszeć nieustający śpiew ptaków, poczuć zapach lasu, a wieczorem delektować się widokiem wschodu słońca i księżyca, pięknie odbijającego się w jeziorku.</p>
+        <p class="sentence__text">Tutaj czas płynie wolno...</p>
+    </section>
+    <section class="photo">
+        <div class="photo__container">
+            <figure class="photo__figure"><img src="img/studnia_min.jpg" class="photo__item" alt="Stara studnia na terenie skansenu Pomezania w Kałdunach koło Iławy"></figure>
+            <figure class="photo__figure"><img src="img/dworek_min.jpg" class="photo__item" alt="Przepiękny dworek Wysockich na terenie skansenu Pomezania w Kałdunach koło Iławy"></figure>
+            <figure class="photo__figure"><img src="img/chalupa_mazurska_min.jpg" class="photo__item" alt="Chałupa Mazurska na terenie skansenu"></figure>
+            <figure class="photo__figure"><img src="img/pomost_min.jpg" class="photo__item" alt="Przepiękny widok na jezioro dostępne na terenie skansenu Pomezania w Kałdunach koło Iławy"></figure>
+            <figure class="photo__figure"><img src="img/brog_min.jpg" class="photo__item" alt="Brog udostępniony gością na terenie skansenu Pomezania"></figure>
+            <figure class="photo__figure"><img src="img/brama_wiazdowa_min.jpg" class="photo__item" alt="Brama wiazdowa do skansenu Pomezania"></figure>
+        </div>
+    </section>
+    <section class="map" id="map"></section>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__list footer__list--contact">
+                <li class="footer__item footer__item--title">
+                    <h3>Kontakt:</h3></li>
+                <li class="footer__item">Agroturystyka "Skansen Pomezania"</li>
+                <li class="footer__item">Agnieszka i Waldemar Wysoccy</li>
+                <li class="footer__item">Agnieszka: 507 138 820</li>
+                <li class="footer__item">Waldemar: 502 244 535</li>
+                <li class="footer__item">skansenpomezania@wp.pl</li>
+            </ul>
+            <ul class="footer__list footer__list--address">
+                <li class="footer__item footer__item--title">
+                    <h3>Adres:</h3></li>
+                <li class="footer__item">Kałduny 39a koło Iławy</li>
+                <li class="footer__item">14-204 Rudzienice</li>
+                <li class="footer__item">Nr Konta: 28 1240 1604 1111 0000 1381 9729</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+
+        function initMap() {
+            // Styles a map in night mode.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 53.5988884,
+                    lng: 19.6611939
+                },
+                zoom: 13,
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "saturation": 36
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 40
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }, {
+                        "weight": 1.2
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 21
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 29
+                    }, {
+                        "weight": 0.2
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 18
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 19
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#9B876D"
+                    }, {
+                        "lightness": 17
+                    }]
+                }]
+            });
+            var image = 'img/marker.png';
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(53.5956292, 19.6606813),
+                map: map,
+                title: 'Skansen Pomezania',
+                icon: image
+
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGBYdjNGkbNrezM5DYNDNFLWhvmccD3L8&callback=initMap" async defer="defer"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu__list").click(function() {
+                $("#menu__list--link").toggleClass("mobile--on");
+                $('nav').toggleClass("nav--mobile");
+            });
+        });
+    </script>
+</body>
+
+</html>

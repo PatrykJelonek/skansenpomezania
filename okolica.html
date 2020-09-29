@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#292f35">
+    <meta name="description" content="Atrakcje dostępne w okolicy Skansenu Pomezania we wsi Kałduny koło Iławy w województwie warmińsko-mazurskim nad Jeziorem Ławice. " />
+    <meta name="keywords" content="Agroturystyka, Skansen, Pomezania, Kałduny, Iława, Pokoje, Wynajem, Jezioro, Ławice, Warmińsko-Mazurskie, Dworek, Wysockich" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin-ext" rel="stylesheet">
+    <title>Okolica - Skansen Pomezania</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="image_src" href="img/logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">
+                <a class="nav__logo--link" href="#">
+                    <img src="img/ozdoba_lewa.png" class="nav__logo--img" alt=""/>
+                    Agroturystyka „Skansen Pomezania”
+                    <img src="img/ozdoba_prawa.png" class="nav__logo--img" alt=""/>
+                </a>
+            </h1>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--mobile" id="menu__list">
+                    <a class="nav__link nav__link--mobile" id="menu__list--link"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Strona Główna</a></li>
+                <li class="nav__item"><a class="nav__link" href="skansen.html">Skansen</a></li>
+                <li class="nav__item"><a class="nav__link" href="pokoje.html">Pokoje</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="okolica.html">Okolica</a></li>
+                <li class="nav__item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="cennik.html">Cennik</a></li>
+                <li class="nav__item"><a class="nav__link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sentence sentence--okolica">
+        <header class="sentence__header">
+            <h2 class="sentence__title">Okolica</h2></header>
+        <p class="sentence__text">Jest to wyjątkowe miejsce dla wędkarzy i grzybiarzy. W okolicy panują doskonałe warunki  do uprawiania sportów wodnych, turystyki rowerowej, narciarstwa zimowego i biegania.</p>
+        <ol class="attractions">
+            <li class="attraction"><h3 class="attractions__category attractions__category--first">Dalsza okolica  - około 100 km:</h3></li>
+            <li class="attraction">Grunwald, Kanał iławsko – ostródzko – elbląski, Lidzbark Warmiński, Olsztyn, Olsztynek, Malbork, Toruń, Trójmiasto, Wilczy Szaniec.</li>
+            <li class="attraction"><h3 class="attractions__category">Najbliższa okolica – do 30 km:</h3></li>
+            <li class="attraction"><b>Bałcyny</b> – folwark z dworem i parkiem</li>
+            <li class="attraction"><b>Bałoszyce</b> – pałac z XVII w.</li>
+            <li class="attraction"><b>Bratian</b> – riuny zamku z XIV w.</li>
+            <li class="attraction"><b>Czachówki</b> – dwór z XIX w.</li>
+            <li class="attraction"><b>Dąbrówno</b> – ruiny zamku, Synagoga, pozostałości stacji kolejowej</li>
+            <li class="attraction"><b>Glaznoty</b> – kościół, wiadukt kolejowy</li>
+            <li class="attraction"><b>Iława</b> – Jezioro Jeziorak, Galeria Jeziorak, Kinoteatr „Pasja”, kościół w stylu gotyckim  z renesansową wieżą, mury miejskie, basen, kręgielnia, wyspa Wielka Żuława, hala widowiskowo – sportowa, ścieżki rowerowe</li>
+            <li class="attraction"><b>Januszewo</b> – pałac barokowy</li>
+            <li class="attraction"><b>Jerzwałd</b> – dom i nagrobek Z. Nienackiego</li>
+            <li class="attraction"><b>Kamieniec</b> – ruiny barokowego pałacu</li>
+            <li class="attraction"><b>Karnity</b> – zespół pałacowo – parkowy z noegotyckim pałacem</li>
+            <li class="attraction"><b>Kurzętnik</b> – wyciąg narciarski „Kurza Góra”</li>
+            <li class="attraction"><b>Lubawa</b> – ruiny zamku</li>
+            <li class="attraction"><b>Ostróda</b> – zamek krzyżacki, kaplica Baptystów, wakepark</li>
+            <li class="attraction"><b>Rudzienice</b> – neogotycki kościół</li>
+            <li class="attraction"><b>Samborowo</b> – schrony, bunkry obronne</li>
+            <li class="attraction"><b>Siemiany</b> – wyspa Wielki Bukowiec</li>
+            <li class="attraction"><b>Szymbark</b> – ruiny zamku</li>
+            <li class="attraction"><b>Wygoda</b> – wyciąg narciarski</li>
+            <li class="attraction"><b>Wysoka Wieś</b> – najwyższe wzniesienie Warmii i Mazur - Dylewska Góra</li>
+            <li class="attraction">i wiele innych...</li>
+        </ol>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu__list").click(function() {
+                $("#menu__list--link").toggleClass("mobile--on");
+                $('nav').toggleClass("nav--mobile");
+            });
+        });
+    </script>
+</body>
+
+</html>

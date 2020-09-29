@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#292f35">
+    <meta name="description" content="Kontakt z właściecielami Skansenu Pomezania we wsi Kałduny koło Iławy w województwie warmińsko-mazurskim nad Jeziorem Ławice. " />
+    <meta name="keywords" content="Agroturystyka, Skansen, Pomezania, Kałduny, Iława, Pokoje, Wynajem, Jezioro, Ławice, Warmińsko-Mazurskie, Dworek, Wysockich" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&amp;subset=latin-ext" rel="stylesheet">
+    <title>Kontakt - Skansen Pomezania</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="image_src" href="img/logo.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="nav__logo">
+                <a class="nav__logo--link" href="#">
+                    <img src="img/ozdoba_lewa.png" class="nav__logo--img"  alt=""/>
+                    Agroturystyka „Skansen Pomezania”
+                    <img src="img/ozdoba_prawa.png" class="nav__logo--img"  alt=""/>
+                </a>
+            </h1>
+            <ul class="nav__list">
+                <li class="nav__item nav__item--mobile" id="menu__list">
+                    <a class="nav__link nav__link--mobile" id="menu__list--link"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="index.html">Strona Główna</a></li>
+                <li class="nav__item"><a class="nav__link" href="skansen.html">Skansen</a></li>
+                <li class="nav__item"><a class="nav__link" href="pokoje.html">Pokoje</a></li>
+                <li class="nav__item"><a class="nav__link" href="okolica.html">Okolica</a></li>
+                <li class="nav__item"><a class="nav__link" href="galeria.html">Galeria</a></li>
+                <li class="nav__item"><a class="nav__link" href="cennik.html">Cennik</a></li>
+                <li class="nav__item"><a class="nav__link nav__link--active" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact">
+        <img src="img/logo.png" alt="Logo skansenu" class="contact__logo" />
+        <ul class="contact__list contact__list--contact">
+            <li class="contact__item contact__item--title">
+                <h3>Kontakt</h3></li>
+            <li class="contact__item">Agroturystyka "Skansen Pomezania"</li>
+            <li class="contact__item">Agnieszka i Waldemar Wysoccy</li>
+            <li class="contact__item">Agnieszka: <span class="contact__item--marker">507 138 820</span></li>
+            <li class="contact__item">Waldemar: <span class="contact__item--marker">502 244 535</span></li>
+            <li class="contact__item">email: <span class="contact__item--marker">skansenpomezania@wp.pl</span></li>
+        </ul>
+        <ul class="contact__list contact__list--address">
+            <li class="contact__item contact__item--title">
+                <h3>Adres</h3></li>
+            <li class="contact__item">Kałduny 39a koło Iławy</li>
+            <li class="contact__item">14-204 Rudzienice</li>
+            <li class="contact__item">Nr Konta: <span class="contact__item--marker">28 1240 1604 1111 0000 1381 9729</span></li>
+        </ul>
+    </section>
+    <section class="map map--down" id="map"></section>
+    <script>
+
+        function initMap() {
+            // Styles a map in night mode.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 53.5988884,
+                    lng: 19.6611939
+                },
+                zoom: 13,
+                styles: [{
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{
+                        "saturation": 36
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 40
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }, {
+                        "weight": 1.2
+                    }]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 20
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 21
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 17
+                    }]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 29
+                    }, {
+                        "weight": 0.2
+                    }]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 18
+                    }]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 16
+                    }]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#000000"
+                    }, {
+                        "lightness": 19
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "color": "#9B876D"
+                    }, {
+                        "lightness": 17
+                    }]
+                }]
+            });
+            var image = 'img/marker.png';
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(53.5956292, 19.6606813),
+                map: map,
+                title: 'Skansen Pomezania',
+                icon: image
+
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGBYdjNGkbNrezM5DYNDNFLWhvmccD3L8&callback=initMap" async defer="defer"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu__list").click(function() {
+                $("#menu__list--link").toggleClass("mobile--on");
+                $('nav').toggleClass("nav--mobile");
+            });
+        });
+    </script>
+</body>
+
+</html>

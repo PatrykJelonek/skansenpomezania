@@ -1,0 +1,32 @@
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 10 days"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/plain "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-icon "access plus 1 year"
+</IfModule>
+
+Options -Multiviews
+
+RewriteEngine On
+RewriteBase /
+
+# Force search engines to use skansenpomezania.pl
+RewriteCond %{HTTP_HOST} !^skansenpomezania\.pl$
+RewriteRule ^(.*) http://skansenpomezania.pl/$1 [R=301,L]
+
+# Specify search friendly URLs
+RewriteRule ^skansenpomezania\.pl/strona_glowna$ /skansenpomezania.pl/index.html [L]
+RewriteRule ^skansenpomezania\.pl/skansen$ /skansenpomezania.pl/skansen.html [L]
+RewriteRule ^skansenpomezania\.pl/pokoje$ /skansenpomezania.pl/pokoje.html [L]
+RewriteRule ^skansenpomezania\.pl/okolica$ /skansenpomezania.pl/okolica.html [L]
+RewriteRule ^skansenpomezania\.pl/galeria$ /skansenpomezania.pl/galeria.html [L]
+RewriteRule ^skansenpomezania\.pl/cennik$ /skansenpomezania.pl/cennik.html [L]
+RewriteRule ^skansenpomezania\.pl/kontakt$ /skansenpomezania.pl/kontakt.html [L]
+
+# Generated for free at SearchFriendlyURLs.com
