@@ -1,0 +1,1342 @@
+@charset "UTF-8";
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+figcaption,
+figure,
+main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio,
+video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details,
+menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+/*
+    Style strony
+*/
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw
+}
+
+.nav {
+    background: #292f35;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 60px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    transition: height .3s ease-in-out
+}
+
+.nav__logo {
+    margin: 0;
+    line-height: 60px;
+    font-size: 24px;
+    font-family: 'Marck Script', cursive;
+    letter-spacing: 1px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .nav__logo{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .nav__logo {
+        height: 60px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .nav__logo {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width:315px) {
+    .nav__logo {
+        font-size: 15px
+    }
+}
+
+.nav__logo--link {
+    color: #d1b185;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__logo--img{
+    height: 50px;
+    margin: 0px 10px;
+}
+
+@media screen and (max-width:500px) {
+    .nav__logo--img {
+        display: none;
+    }
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+@media screen and (max-width:610px) {
+    .nav__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav__item {
+    float: left;
+    display: block;
+    height: 100%;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px
+}
+
+@media screen and (max-width:1100px) {
+    .nav__item {
+        float: left;
+        text-align: center
+    }
+}
+
+@media screen and (max-width:610px) {
+    .nav__item {
+        clear: both;
+        text-align: center;
+        width: 100%
+    }
+}
+
+.nav__item--mobile {
+    height: 40px;
+    font-size: 17px;
+    color: #292f35
+}
+
+.nav__link {
+    padding: 0 10px 0 10px;
+    display: block;
+    height: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    color: #d1b185;
+    text-shadow: 1px 1px black;
+    transition: border-bottom .2s ease-in-out
+}
+
+.nav__link--active,
+.nav__link:hover {
+    border-bottom: 3px solid #d1b185;
+    cursor: pointer
+}
+
+@media screen and (max-width:1100px) {
+    .nav__link--active,
+    .nav__link:hover {
+        color: #bc8d4d;
+        border: none
+    }
+}
+
+@media screen and (max-width:610px) {
+    .nav__link--active,
+    .nav__link:hover {
+        width: 100%
+    }
+}
+
+.nav__link--mobile {
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    background: #d1b185;
+    color: #292f35
+}
+
+.nav__link--mobile::before {
+    content: "Rozwiń Menu";
+    background: #d1b185;
+    text-shadow: 0px 0px transparent;
+    color: #292f35;
+}
+
+.nav__link--mobile:hover {
+    background: #d1b185;
+    color: #292f35
+}
+
+@media screen and (max-width:610px) {
+    .nav__link--mobile {
+        display: block
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 120px;
+        overflow: hidden
+    }
+}
+
+@media screen and (max-width:610px) {
+    .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100px;
+        overflow: hidden
+    }
+    .nav--mobile {
+        overflow: hidden;
+        height: 520px
+    }
+}
+
+@media screen and (max-height:520px) {
+    .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100px;
+        overflow: hidden;
+    }
+    .nav--mobile {
+        height: 100%;
+        overflow: auto;
+    }
+}
+
+.mobile--on::before {
+    content: "";
+    display: none
+}
+
+.mobile--on::after {
+    content: "Zwiń Menu"
+}
+
+.sentence {
+    position: relative;
+    padding-top: 50px;
+    max-width: 1000px;
+    color: #292f35;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 27px;
+    font-family: 'Marck Script', cursive
+}
+
+@media screen and (max-width:610px) {
+    .sentence {
+        padding: 25px 15px 0px 15px;
+    }
+}
+
+.sentence--skansen, .sentence--okolica{
+    padding-top: 80px;
+}
+
+@media screen and (max-width:1100px) {
+    .sentence--skansen, .sentence--okolica {
+        margin-top: 140px;
+        padding: 0px 25px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .sentence--skansen, .sentence--okolica {
+        margin-top: 120px;
+    }
+}
+
+
+@media screen and (max-width:485px) {
+    .sentence {
+        font-size: 25px
+    }
+}
+
+.sentence__image {
+    max-width: 800px
+}
+
+.sentence__title {
+    font-size: 45px;
+    margin: 10px;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.sentence__title--center {
+    text-align: center;
+}
+
+.sentence__paragraph {
+    max-width: 800px
+}
+
+.sentence__text {
+    margin-bottom: 50px
+}
+
+.sentence__img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    margin: 20px 0
+}
+
+.sentence__img--skansen {
+    background: url(../img/skansen_wide.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.sentence__img--dworek {
+    background: url(../img/dworek_wide.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.sentence__img--chalupa_mazurska {
+    background: url(../img/chałupa_mazurska_wide.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.sentence__img--brog {
+    background: url(../img/brog_wide.jpg);
+    background-size: cover;
+    background-position: center center
+}
+
+.attractions{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.attractions__category{
+    margin: 40px 0 10px 0;
+    font-size: 40px;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.attractions__category--first{
+    margin: 0px 0 10px 0;
+}
+
+.attraction{
+    font-size: 23px;
+    padding: 5px 0;
+}
+
+.attraction b{
+    font-size: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .attractions__category{
+        font-size: 30px;
+    }
+
+    .attraction{
+        font-size: 19px;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .attractions__category{
+        font-size: 25px;
+    }
+
+    .attraction{
+        font-size: 19px;
+        padding: 5px 0;
+    }
+
+    .attraction b{
+        font-size: 20px;
+    }
+}
+
+.panorama {
+    width: 100vw;
+    height: 600px;
+    margin-top: 60px;
+    background: url(../img/panorama_skansenu.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    filter: grayscale(50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3)
+}
+
+@media screen and (max-width:700px) {
+    .panorama {
+        height: 490px;
+        background: url(../img/panorama_skansenu_min.jpg);
+        background-position: center;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .panorama {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .panorama {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .panorama {
+        height: 400px
+    }
+}
+
+@media screen and (max-width:320px) {
+    .panorama {
+        height: calc(100vh - 60px)
+    }
+}
+
+.quotation {
+    max-width: 800px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    font-family: 'Marck Script', cursive;
+    text-align: center
+}
+
+@media screen and (max-width:480px) {
+    .quotation {
+        font-size: 23px
+    }
+}
+
+@media screen and (max-width:640px) {
+    .quotation {
+        font-size: 25px
+    }
+}
+
+.quotation__author {
+    text-align: right;
+    max-width: 600px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+    font-family: 'Marck Script', cursive
+}
+
+@media screen and (max-width:640px) {
+    .quotation__author {
+        font-size: 25px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .quotation__author {
+        font-size: 23px
+    }
+}
+
+.photo {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.photo__title {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    color: #292f35;
+    margin: 5px 0;
+    text-align: right;
+    text-shadow: 2px 2px #d1b185;
+}
+
+@media screen and (max-width:1000px) {
+    .photo__title {
+        padding: 0 25px
+    }
+}
+
+.photo__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+@media screen and (max-width:700px) {
+    .photo__container {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+}
+
+.photo__figure {
+    margin: 0
+}
+
+@media screen and (max-width:1100px) {
+    .photo__figure {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 45%
+    }
+}
+
+@media screen and (max-width:700px) {
+    .photo__figure {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 90%
+    }
+}
+
+.photo__item {
+    width: 320px;
+    margin: 10px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3)
+}
+
+@media screen and (max-width:700px) {
+    .photo__item {
+        width: 90%
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .photo__item {
+        width: 100%
+    }
+}
+
+.photo__footer {
+    text-align: right;
+    font-family: 'Marck Script', cursive;
+    margin: 10px 0
+}
+
+.photo__link {
+    font-size: 18px;
+    color: #2F3135;
+    text-decoration: none;
+    transition: text-decoration .3s ease-in-out
+}
+
+@media screen and (max-width:500px) {
+    .photo__link {
+        padding: 20px;
+        font-size: 20px
+    }
+}
+
+.photo__link:hover {
+    text-decoration: underline
+}
+
+.rooms {
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: 'Marck Script', cursive;
+    padding: 80px 20px 20px 20px
+}
+
+@media screen and (max-width:1100px) {
+    .rooms {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .rooms {
+        margin-top: 35px;
+    }
+}
+
+.room{
+    margin-bottom: 70px;
+}
+
+.rooms__header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rooms__title {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    color: #292f35;
+    margin: 5px 0;
+    text-align: center;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.rooms__description {
+    font-size: 27px;
+}
+
+.room__title {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    color: #292f35;
+    margin: 5px 0;
+    text-align: center;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.room__title--right {
+    text-align: right
+}
+
+.room__description {
+    text-align: justify;
+    font-size: 27px
+}
+
+.room__img {
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    margin: 20px 0
+}
+
+.room__img--sowie_oczy {
+    background: url(../img/pokoj_sowie_oczy_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--golebie_serce {
+    background: url(../img/pokoj_golebie_serce_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--bocianie_gniazdo {
+    background: url(../img/pokoj_bocianie_gniazdo_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--zurawi_klangor {
+    background: url(../img/pokoj_zurawi_klangor_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--salon {
+    background: url(../img/salon_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--kuchnia {
+    background: url(../img/kuchnia_wide.jpg);
+    background-size: cover;
+}
+
+.room__img--lazienka{
+    background: url(../img/lazienka_wide.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+
+@media screen and (max-width:450px) {
+    .room__img {
+        background-position: center center;
+    }
+}
+
+.room__link {
+    color: #705229;
+    font-size: 20px;
+    margin-bottom: 20px
+}
+
+.room__addition {
+    font-size: 27px;
+    display: block;
+    margin: 50px 0;
+    text-align: center;
+    font-weight: 700
+}
+
+.prices {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Marck Script', cursive;
+    margin-top: 80px;
+    padding: 20px
+}
+
+@media screen and (max-width:1100px) {
+    .prices {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .prices {
+        margin-top: 75px;
+    }
+}
+
+.prices__header {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.prices__title {
+    font-size: 45px;
+    color: #292f35;
+    margin: 5px 0;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.prices__list {
+    list-style-type: none;
+    font-size: 27px;
+    padding: 0px;
+}
+
+.prices__item {
+    letter-spacing: 1px
+}
+
+@media screen and (max-width:450px) {
+    .prices__item {
+        font-size: 18px;
+    }
+}
+
+.prices__item--marker {
+    color: #ae8142
+}
+
+.prices__item--space {
+    height: 30px;
+    display: block
+}
+
+.contact {
+    max-width: 1000px;
+    margin: 60px auto;
+    font-family: 'Marck Script', cursive;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-height:1320px) {
+    .contact {
+        height: calc(100vh - 600px);
+    }
+}
+
+
+@media screen and (max-width:1100px) {
+    .contact {
+        margin-top: 130px;
+    }
+}
+
+.contact__logo {
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:500px) {
+    .contact__logo {
+        width: 95%;
+    }
+}
+
+@media screen and (max-height:1450px) {
+    .contact__logo {
+        margin-top: 30px;
+    }
+}
+
+.contact__header {
+    margin: 20px 0
+}
+
+.contact__title {
+    font-size: 45px;
+    color: #292f35;
+    margin: 5px 0;
+}
+
+.contact__list {
+    list-style-type: none;
+    font-size: 27px;
+    padding: 0;
+    text-align: center;
+}
+
+.contact__item {
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:450px) {
+    .contact__item {
+        font-size: 22px;
+    }
+}
+
+.contact__item--title {
+    color: black;
+    font-size: 40px;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.contact__item--title h3 {
+    margin: 0;
+    padding: 0
+}
+
+.contact__item--marker {
+    color: #ae8142
+}
+
+.contact__item--space {
+    height: 30px;
+    display: block
+}
+
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Marck Script', cursive
+}
+
+@media screen and (max-width:1100px) {
+    .gallery {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .gallery {
+        margin-top: 25px;
+    }
+}
+
+.gallery__row {
+    height: 50px;
+    overflow: hidden;
+    margin: 20px 0;
+    transition: height .3s ease-in-out
+}
+
+.gallery__row--on {
+    height: auto
+}
+
+.gallery__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: transparent;
+    color: #292f35;
+    padding: 0 10px;
+    height: 50px
+}
+
+.gallery__title {
+    font-size: 0
+}
+
+@media screen and (max-width: 380px) {
+    .gallery__title {
+        font-size: 0;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .gallery__title {
+        font-size: 0;
+    }
+}
+
+.gallery__view {
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 2px 2px #d1b185;
+    cursor: pointer
+}
+
+.gallery__view::before {
+    content: "Zobacz więcej zdjęć..."
+}
+
+.gallery__view--on::before {
+    content: '';
+    display: none
+}
+
+.gallery__view--on::after {
+    content: "Ukryj Zdjęcia"
+}
+
+@media screen and (max-width: 380px) {
+    .gallery__view::before, .gallery__view--on::after {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:335px) {
+    .gallery__view::before, .gallery__view--on::after {
+        font-size: 14px;
+    }
+}
+
+.gallery__container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.gallery__figure {
+    width: 33.3%;
+    margin: 0;
+    padding: 20px
+}
+
+@media screen and (max-width:1100px) {
+    .gallery__figure {
+        width: 50%
+    }
+}
+
+@media screen and (max-width:700px) {
+    .gallery__figure {
+        width: 100%
+    }
+}
+
+.gallery__image {
+    width: 100%
+}
+
+.section__header {
+    margin: 30px;
+    padding-top: 1px;
+    font-size: 37px;
+    text-align: center;
+    text-shadow: 2px 2px #d1b185;
+}
+
+.map {
+    width: 100vw;
+    height: 500px;
+    border-bottom: 2px solid #d1b185
+}
+
+@media screen and (min-height:1320px) {
+    .map--down {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .map {
+        height: 350px
+    }
+}
+
+.footer {
+    width: 100vw;
+    background: #292f35;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #d1b185;
+    padding-bottom: 20px;
+    font-family: 'Marck Script', cursive;
+    font-size: 20px;
+    padding: 10px 0 20px 0
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 1000px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 0 30px;
+}
+
+@media screen and (max-width:700px) {
+    .footer__container {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: space-around;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.footer__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+@media screen and (max-width:700px) {
+    .footer__list {
+        margin-top: 10px
+    }
+}
+
+.footer__item {
+    padding: 0 10px
+}
+
+@media screen and (max-width:700px) {
+    .footer__item {
+        text-align: center
+    }
+}
+
+.footer__item--title {
+    font-size: 30px;
+    padding: 0
+}
+
+.footer__item--title h3 {
+    margin: 10px 0
+}
